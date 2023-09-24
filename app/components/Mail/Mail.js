@@ -1,10 +1,11 @@
 import "./Mail.css";
 import mail from "../../images/mail-img.png";
+import Image from "next/image";
 
 function Mail() {
   return (
 <section className="mail">
-        <img className="mail__foto" src={mail} alt="cta foto" />
+        <Image className="mail__foto" src={mail} alt="cta foto" />
         <div className="mail__text">
           <h3 className="mail__title">Пора в путешествие вместе с нами!</h3>
           <div>

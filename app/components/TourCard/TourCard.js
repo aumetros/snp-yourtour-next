@@ -1,9 +1,10 @@
 import "./TourCard.css";
+import Image from "next/image";
 
 function TourCard({ card }) {
   return (
     <li className="tours-card">
-    <img
+    <Image
       className="tours-card__foto"
       src={card}
       alt="tour foto"

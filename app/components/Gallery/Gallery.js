@@ -1,5 +1,6 @@
 import "./Gallery.css";
 import { arrGallery } from "../../utils/useData";
+import Image from "next/image";
 
 function Gallery() {
   return (
@@ -15,7 +16,7 @@ function Gallery() {
         <div className="tours-gallery__container tours-gallery__container_row_first">
           {arrGallery.slice(0, 4).map((img, i) => {
             return (
-              <img
+              <Image
                 key={i}
                 src={img}
                 alt="gallery foto"
@@ -27,7 +28,7 @@ function Gallery() {
         <div className="tours-gallery__container tours-gallery__container_row_second">
           {arrGallery.slice(4, 9).map((img, i) => {
             return (
-              <img
+              <Image
                 key={i}
                 src={img}
                 alt="gallery foto"
@@ -39,7 +40,7 @@ function Gallery() {
         <div className="tours-gallery__container tours-gallery__container_row_third">
           {arrGallery.slice(9).map((img, i) => {
             return (
-              <img
+              <Image
                 key={i}
                 src={img}
                 alt="gallery foto"

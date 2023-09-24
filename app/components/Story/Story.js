@@ -1,4 +1,5 @@
 import "./Story.css";
+import Image from "next/image";
 
 function Story({ story }) {
   return (
@@ -30,7 +31,7 @@ function Story({ story }) {
           </ul>
         </div>
         <div className="stories-card__overlay"></div>
-        <img className="stories-card__image" src={story.foto} alt="stories card foto" />
+        <Image className="stories-card__image" src={story.foto} alt="stories card foto" />
       </div>
      
   )

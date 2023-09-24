@@ -5,7 +5,7 @@ import Gallery from "../Gallery/Gallery";
 import Stories from "../Stories/Stories";
 import Mail from "../Mail/Mail";
 
-function Main() {
+export default function Main() {
   return (
     <main className="main">
       <ChooseTour />
@@ -17,5 +17,3 @@ function Main() {
     </main>
   )
 }
-
-export default Main;

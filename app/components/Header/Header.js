@@ -1,17 +1,22 @@
+"use client";
 import "./Header.css";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import React from "react";
 
-function Header() {
+export default function Header() {
   const [isScrollMenuShow, setIsScrollMenuShow] = React.useState(false);
-  const [scrollPosition, setScrollPosition] = React.useState(window.scrollY);
+  const [scrollPosition, setScrollPosition] = React.useState(0);
 
   function handleScrollWindow() {
-    setScrollPosition(window.scrollY);
+    if (typeof window !== undefined) {
+      setScrollPosition(window.scrollY);
+    }
   }
 
   React.useEffect(() => {
-    window.addEventListener("scroll", handleScrollWindow);
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", handleScrollWindow);
+    }
   }, []);
 
   React.useEffect(() => {
@@ -57,5 +62,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

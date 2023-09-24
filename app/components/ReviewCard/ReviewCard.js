@@ -1,4 +1,5 @@
 import "./ReviewCard.css";
+import Image from "next/image";
 
 function ReviewCard({ review }) {
   return (
@@ -13,7 +14,7 @@ function ReviewCard({ review }) {
         <span className="review-card__profile-tour text-small">
           {review.tour}
         </span>
-        <img
+        <Image
           className="review-card__profile-foto"
           src={review.foto}
           alt="profile foto"
