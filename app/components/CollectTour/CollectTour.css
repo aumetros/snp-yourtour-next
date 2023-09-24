@@ -1,0 +1,35 @@
+.collect-tour {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 53px 53px 52px;
+}
+
+.collect-tour__title {
+  max-width: 458px;
+  margin: 0 auto 30px;
+}
+
+.collect-tour__subtitle {
+  max-width: 418px;
+  margin: 0 auto 100px;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .collect-tour__subtitle {
+    max-width: 318px;
+    margin-bottom: 40px;
+  }
+
+  .collect-tour__title {
+    max-width: 318px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .collect-tour {
+    padding: 53px 21px 52px;
+  }
+}

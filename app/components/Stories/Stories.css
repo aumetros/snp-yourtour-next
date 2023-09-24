@@ -1,0 +1,45 @@
+.stories {
+  max-width: 1170px;
+  padding: 135px 53px;
+  margin: 0 auto;
+}
+
+.stories__title {
+  max-width: 615px;
+  margin: 0 auto 30px;
+}
+
+.stories__subtitle {
+  max-width: 418px;
+  margin: 0 auto 100px;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.stories__cards {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .stories {
+    padding: 75px 21px;
+  }
+  .stories__title {
+    max-width: 319px;
+    margin-bottom: 20px;
+  }
+
+  .stories__subtitle {
+    max-width: 319px;
+    margin-bottom: 50px;
+  }
+
+  .stories__cards {
+    gap: 20px;
+  }
+}

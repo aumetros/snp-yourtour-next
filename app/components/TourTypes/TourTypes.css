@@ -1,0 +1,40 @@
+.tours-types {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+  list-style-type: none;
+  margin: 0 0 106px;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tours-types__type {
+  color: #1b1f2b; /**Для правильного отображения цвета в iOS**/
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tours-types__type:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.tours-types__type_active {
+  color: #efa501;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .tours-types {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .tours-types__type_active {
+    text-underline-offset: 4px;
+  }
+}
