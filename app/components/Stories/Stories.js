@@ -2,7 +2,7 @@ import "./Stories.css";
 import Story from "../Story/Story";
 import { stories } from "../../utils/useData";
 
-function Stories() {
+export default function Stories() {
   return (
     <section id="stories" className="stories">
       <h2 className="stories__title text-section-title">Истории путешествий</h2>
@@ -18,5 +18,3 @@ function Stories() {
     </section>
   );
 }
-
-export default Stories;

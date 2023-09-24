@@ -1,7 +1,7 @@
 import "./ReviewCard.css";
 import Image from "next/image";
 
-function ReviewCard({ review }) {
+export default function ReviewCard({ review }) {
   return (
     <div className="review-card">
       <div className="review-card__text-container">
@@ -23,5 +23,3 @@ function ReviewCard({ review }) {
     </div>
   );
 }
-
-export default ReviewCard;

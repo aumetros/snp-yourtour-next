@@ -2,7 +2,7 @@ import "./Review.css";
 import { reviews } from "../../utils/useData";
 import ReviewCard from "../ReviewCard/ReviewCard";
 
-function Review() {
+export default function Review() {
   return (
     <section id="review" className="review">
       <h2 className="review__title text-section-title">
@@ -20,5 +20,3 @@ function Review() {
     </section>
   );
 }
-
-export default Review;

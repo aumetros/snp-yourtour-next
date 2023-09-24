@@ -1,6 +1,6 @@
 import "./ToursForm.css";
 
-function ToursForm() {
+export default function ToursForm() {
   return (
     <form className="tours-form">
       <fieldset className="tours-form__fieldset tours-form__fieldset_type_inputs">
@@ -169,5 +169,3 @@ function ToursForm() {
     </form>
   );
 }
-
-export default ToursForm;

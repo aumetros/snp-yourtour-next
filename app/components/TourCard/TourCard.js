@@ -1,7 +1,7 @@
 import "./TourCard.css";
 import Image from "next/image";
 
-function TourCard({ card }) {
+export default function TourCard({ card }) {
   return (
     <li className="tours-card">
     <Image
@@ -23,5 +23,3 @@ function TourCard({ card }) {
   </li>
   )
 }
-
-export default TourCard;

@@ -4,7 +4,7 @@ import TourCard from "../TourCard/TourCard";
 import { arrCards } from "../../utils/useData";
 
 
-function ChooseTour() {
+export default function ChooseTour() {
   return (
     <section id="choose-tour" className="choose-tour">
       <h2 className="choose-tour__title text-section-title">Выбери свой тур</h2>
@@ -17,5 +17,3 @@ function ChooseTour() {
     </section>
   );
 }
-
-export default ChooseTour;

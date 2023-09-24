@@ -1,6 +1,6 @@
 import "./Socials.css";
 
-function Socials() {
+export default function Socials() {
   return (
     <ul className="socials">
       <li>
@@ -39,5 +39,3 @@ function Socials() {
     </ul>
   );
 }
-
-export default Socials;

@@ -1,6 +1,6 @@
 import "./TourTypes.css";
 
-function TourTypes() {
+export default function TourTypes() {
   return (
     <ul className="tours-types">
       <li>
@@ -23,5 +23,3 @@ function TourTypes() {
     </ul>
   );
 }
-
-export default TourTypes;

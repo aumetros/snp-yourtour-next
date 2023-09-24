@@ -1,7 +1,7 @@
 import "./Story.css";
 import Image from "next/image";
 
-function Story({ story }) {
+export default function Story({ story }) {
   return (
 <div className="stories-card">
         <div className="stories-card__text">
@@ -36,5 +36,3 @@ function Story({ story }) {
      
   )
 }
-
-export default Story;

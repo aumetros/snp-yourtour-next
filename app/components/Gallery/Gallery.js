@@ -2,7 +2,7 @@ import "./Gallery.css";
 import { arrGallery } from "../../utils/useData";
 import Image from "next/image";
 
-function Gallery() {
+export default function Gallery() {
   return (
     <section className="gallery">
       <h2 className="gallery__title text-section-title">
@@ -53,5 +53,3 @@ function Gallery() {
     </section>
   );
 }
-
-export default Gallery;

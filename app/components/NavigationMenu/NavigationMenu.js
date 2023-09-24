@@ -1,6 +1,6 @@
 import "./NavigationMenu.css";
 
-function NavigationMenu({ isScroll }) {
+export default function NavigationMenu({ isScroll }) {
   return (
     <ul className="navigation-menu">
       <li>
@@ -26,5 +26,3 @@ function NavigationMenu({ isScroll }) {
     </ul>
   );
 }
-
-export default NavigationMenu;

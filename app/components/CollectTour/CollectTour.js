@@ -1,7 +1,7 @@
 import "./CollectTour.css";
 import ToursForm from "../ToursForm/ToursForm";
 
-function CollectTour() {
+export default function CollectTour() {
   return (
     <section id="collect-tour" className="collect-tour">
       <h2 className="collect-tour__title text-section-title">
@@ -15,5 +15,3 @@ function CollectTour() {
     </section>
   );
 }
-
-export default CollectTour;

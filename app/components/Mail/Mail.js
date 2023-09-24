@@ -2,7 +2,7 @@ import "./Mail.css";
 import mail from "../../images/mail-img.png";
 import Image from "next/image";
 
-function Mail() {
+export default function Mail() {
   return (
 <section className="mail">
         <Image className="mail__foto" src={mail} alt="cta foto" />
@@ -16,5 +16,3 @@ function Mail() {
       </section>
   )
 }
-
-export default Mail;
