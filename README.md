@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Практическое задание проекта "YourTour" (Next.js)
+## Автор: Шевляков Алексей
+## (Salt & Pepper Interns - Направление Frontend разработка)
 
-## Getting Started
+### Обзор проекта
+Данный проект представляет собой сайт для выбора своего идеального путешествия. На главной странице посетитель сможет выбрать готовый тур, создать свой собственный, узнать истории бывалых путешественников и посмотреть их фотографии.
 
-First, run the development server:
+**Технологический стек**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+HTML5, CSS3, Flexbox, Grid Layout, Next.js 13, JSX
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Использованные методы**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Проектная работа создана для отработки следующих технологий и методов:
+* Базовый HTML и CSS.
+* Методология БЭМ.
+* Стилизация стандартных элементов инструментами CSS.
+* Анимация элементов инструментами CSS.
+* Верстка форм.
+* Flexbox верстка и Grid Layout.
+* Верстка в концепции PixelPerfect.
+* Адаптивная верстка под десктоп и мобильные разрешения экранов.
+* Навигация при скролле страницы с помощью Java Script.
+* Проект создан с помощью фреймворка Next.js 13.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+**Ссылка на проект - GitHub Pages**: (https://aumetros.github.io/snp-yourtour-next/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*сентябрь 2023г*
