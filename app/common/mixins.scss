@@ -24,6 +24,12 @@
   }
 }
 
+@mixin s {
+  @media (max-width: $breakpoint_s) {
+    @content;
+  }
+}
+
 @mixin text {
   font-size: 20px;
   font-weight: 400;
