@@ -1,0 +1,79 @@
+@import "./breakpoints.scss";
+
+@mixin xxl {
+  @media (max-width: $breakpoint_xxl) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media (max-width: $breakpoint_l) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: $breakpoint_l) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@mixin text-small {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+
+  @media (max-width: $breakpoint_l) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@mixin text-section-title {
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73px;
+  text-align: center;
+
+  @media (max-width: $breakpoint_l) {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@mixin text-card-title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+
+  @media (max-width: $breakpoint_l) {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+}
+
+@mixin text-bold {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+
+  @media (max-width: $breakpoint_l) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
