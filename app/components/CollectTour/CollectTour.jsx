@@ -1,13 +1,13 @@
-import "./CollectTour.css";
 import ToursForm from "../ToursForm/ToursForm";
+import styles from "./CollectTour.module.scss";
 
 export default function CollectTour() {
   return (
-    <section id="collect-tour" className="collect-tour">
-      <h2 className="collect-tour__title text-section-title">
+    <section id="collect-tour" className={styles.root}>
+      <h2 className={styles.title}>
         Собери свой тур
       </h2>
-      <p className="collect-tour__subtitle text">
+      <p className={styles.subtitle}>
         Идейные соображения высшего порядка, а&nbsp;также рамки и место обучения
         кадров
       </p>

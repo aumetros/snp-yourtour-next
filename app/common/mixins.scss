@@ -13,7 +13,7 @@
 }
 
 @mixin m {
-  @media (max-width: 520px) {
+  @media (max-width: $breakpoint_m) {
     @content;
   }
 }
