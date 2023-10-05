@@ -7,7 +7,7 @@ import styles from "./ChooseTour.module.scss"
 export default function ChooseTour() {
   return (
     <section id="choose-tour" className={styles.root}>
-      <h2 className={`${styles.title} text-section-title`}>Выбери свой тур</h2>
+      <h2 className={styles.title}>Выбери свой тур</h2>
       <TourTypes />
       <ul className={styles.cards}>
         {arrCards.map((card, index) => {

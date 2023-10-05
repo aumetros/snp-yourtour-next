@@ -24,6 +24,8 @@
   @include l {
     margin-bottom: 30px;
   }
+
+  @include text-section-title;
 }
 
 .cards {
