@@ -1,0 +1,39 @@
+@import "../../common/mixins.scss";
+
+.root {
+  padding: 30px;
+  background-color: #f4f0e9;
+
+  @include m {
+    padding: 21px;
+  }
+}
+
+.title {
+  max-width: 222px;
+  margin: 0;
+  color: #a6a6a6;
+
+  @include m {
+    max-width: 177px;
+    margin-bottom: 7px;
+  }
+
+  @include text;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1167px;
+  margin: 0 auto;
+
+  @include xxl {
+    max-width: 918px;
+  }
+
+  @include sl {
+    flex-direction: column;
+    align-items: center;
+  }
+}

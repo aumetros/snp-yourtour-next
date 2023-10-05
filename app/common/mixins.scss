@@ -12,6 +12,12 @@
   }
 }
 
+@mixin sl {
+  @media (max-width: $breakpoint_sl) {
+    @content;
+  }
+}
+
 @mixin m {
   @media (max-width: $breakpoint_m) {
     @content;
