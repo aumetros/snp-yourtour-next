@@ -1,0 +1,182 @@
+@import "../../common/mixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 567px;
+  padding: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  justify-content: space-between;
+  color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @include l {
+    border-radius: 20px;
+    min-height: 455px;
+    padding: 30px 25px 30px 30px;
+  }
+
+  &:hover {
+    @include onlyDesktop {
+      .forwardButton {
+        background-color: #286562;
+      }
+
+      .image {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &:active {
+    @include onlyDesktop {
+      .forwardButton {
+        background-color: #efa501;
+      }
+    }
+  }
+}
+
+.title {
+  max-width: 554px;
+  margin: 0 0 38px;
+  text-wrap: balance;
+
+  @include text-card-title;
+
+  @include l {
+    max-width: 263px;
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0.01%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.list {
+  margin: 28px 0 0;
+  padding-left: 12px;
+  list-style: none;
+
+  @include text;
+
+  li {
+    &::before {
+      content: "•";
+      font-size: 20px;
+      padding-right: 11px;
+
+      @include l {
+        font-size: 16px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @include l {
+    margin-top: 23px;
+    padding-left: 9px;
+  }
+}
+
+.links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 36px;
+  list-style-type: none;
+
+  @include l {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+}
+
+.image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms ease;
+}
+
+.forwardButton {
+  display: flex;
+  flex-direction: row;
+  width: 199px;
+  height: 42px;
+  padding: 7px 20px;
+  border: 0;
+  transform: translate(-20px, 7px);
+  border-radius: 50px;
+  align-items: center;
+  gap: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+
+  @include text-bold;
+
+  @include l {
+    padding-top: 9px;
+    gap: 17px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.description {
+  max-width: 554px;
+  margin: 0;
+
+  @include text;
+}
+
+.arrowButton {
+  min-width: 22px;
+  min-height: 15px;
+  background-image: url(../../images/arrow-img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

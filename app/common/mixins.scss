@@ -36,6 +36,12 @@
   }
 }
 
+@mixin onlyDesktop {
+  @media (min-width: $breakpoint_l) {
+    @content;
+  }
+}
+
 @mixin text {
   font-size: 20px;
   font-weight: 400;

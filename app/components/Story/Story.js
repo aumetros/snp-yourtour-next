@@ -1,37 +1,37 @@
-import "./Story.css";
 import Image from "next/image";
+import styles from "./Story.module.scss"
 
 export default function Story({ story }) {
   return (
-<div className="stories-card">
-        <div className="stories-card__text">
-          <h3 className="stories-card__title text-card-title">{story.title}</h3>
-          <p className="stories-card__description text">
+<div className={styles.root}>
+        <div className={styles.text}>
+          <h3 className={styles.title}>{story.title}</h3>
+          <p className={styles.description}>
             {story.text}
           </p>
-          <ul className="stories-card__list text">
+          <ul className={styles.list}>
             {story.points.map((point, i) => {
               return <li key={i}>{point}</li>
             })}
           </ul>
         </div>
-        <div className="stories-card__footer">
-          <button className="stories-card__forward-button text-bold">
+        <div className={styles.footer}>
+          <button className={styles.forwardButton}>
             <span>Подробнее</span>
-            <span className="stories-card__arrow-button"></span>
+            <span className={styles.arrowButton}></span>
           </button>
-          <ul className="stories-card__links">
+          <ul className={styles.links}>
             {story.links.map((link, i) => {
               return (
                 <li key={i}>
-              <a href={link[1]} className="stories-card__link" target="_blank" rel="noopener noreferrer">{link[0]}</a>
+              <a href={link[1]} className={styles.link} target="_blank" rel="noopener noreferrer">{link[0]}</a>
             </li>
               )
             })}
           </ul>
         </div>
-        <div className="stories-card__overlay"></div>
-        <Image className="stories-card__image" src={story.foto} alt="stories card foto" />
+        <div className={styles.overlay}></div>
+        <Image className={styles.image} src={story.foto} alt="stories card foto" />
       </div>
      
   )
