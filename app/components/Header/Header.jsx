@@ -1,7 +1,7 @@
 "use client";
-import "./Header.css";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import React from "react";
+import styles from "./Header.module.scss"
 
 export default function Header() {
   const [isScrollMenuShow, setIsScrollMenuShow] = React.useState(false);
@@ -28,35 +28,29 @@ export default function Header() {
   }, [scrollPosition]);
 
   return (
-    <header className={`header ${isScrollMenuShow && "header_scrolled"}`}>
+    <header className={`${styles.root} ${isScrollMenuShow && styles.scrolled}`}>
       <div
-        className={`header__navbar ${
-          isScrollMenuShow && "header__navbar_scrolled"
-        }`}
+        className={`${styles.navbar} ${isScrollMenuShow && styles.scrolled}`}
       >
-        <div className="header__navbar-container">
+        <div className={styles.navbar-container}>
           <div
-            className={`header__logo ${
-              isScrollMenuShow && "header__logo_scrolled"
-            }`}
+            className={`${styles.logo} ${isScrollMenuShow && styles.scrolled}`}
           ></div>
           <NavigationMenu isScroll={isScrollMenuShow} />
           <a
             href="tel:+79999999999"
-            className={`header__phone-number ${
-              isScrollMenuShow && "header__phone-number_scrolled"
-            } text`}
+            className={`${styles.phone-number} ${isScrollMenuShow && styles.scrolled}`}
           >
             +7 999 999 99 99
           </a>
         </div>
       </div>
-      <h1 className="header__title">Идеальные путешествия существуют</h1>
-      <p className="header__subtitle text">
+      <h1 className={styles.title}>Идеальные путешествия существуют</h1>
+      <p className={styles.subtitle}>
         Идейные соображения высшего порядка, а также рамки и место обучения
         кадров
       </p>
-      <button className="header__find-button" type="button">
+      <button className={styles.find-button} type="button">
         Найти тур
       </button>
     </header>
