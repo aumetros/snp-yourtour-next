@@ -7,7 +7,7 @@ import Mail from "../Mail/Mail";
 
 export default function Main() {
   return (
-    <main className="main">
+    <main>
       <ChooseTour />
       <CollectTour />
       <Review />

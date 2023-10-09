@@ -1,25 +1,37 @@
-import "./NavigationMenu.css";
+import styles from "./NavigationMenu.module.scss";
 
 export default function NavigationMenu({ isScroll }) {
   return (
-    <ul className="navigation-menu">
+    <ul className={styles.root}>
       <li>
-        <a href="#choose-tour" className={`navigation-menu__item ${isScroll && "navigation-menu__item_scrolled"}`}>
+        <a
+          href="#choose-tour"
+          className={`${styles.item} ${isScroll && styles.scrolled}`}
+        >
           Туры
         </a>
       </li>
       <li>
-        <a href="#collect-tour" className={`navigation-menu__item ${isScroll && "navigation-menu__item_scrolled"}`}>
+        <a
+          href="#collect-tour"
+          className={`${styles.item} ${isScroll && styles.scrolled}`}
+        >
           Создать тур
         </a>
       </li>
       <li>
-        <a href="#review" className={`navigation-menu__item ${isScroll && "navigation-menu__item_scrolled"}`}>
+        <a
+          href="#review"
+          className={`${styles.item} ${isScroll && styles.scrolled}`}
+        >
           Отзывы
         </a>
       </li>
       <li>
-        <a href="#stories" className={`navigation-menu__item ${isScroll && "navigation-menu__item_scrolled"}`}>
+        <a
+          href="#stories"
+          className={`${styles.item} ${isScroll && styles.scrolled}`}
+        >
           Истории
         </a>
       </li>
