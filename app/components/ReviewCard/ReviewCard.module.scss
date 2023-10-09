@@ -1,0 +1,77 @@
+@import "../../common/mixins.scss";
+
+.root {
+  min-height: 673px;
+  padding: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f4f0e9;
+
+  @include l {
+    min-height: 408px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+.text {
+  margin: 0 0 28px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include l {
+    margin-bottom: 23px;
+  }
+
+  @include text-bold;
+}
+
+.profile {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 75px;
+  grid-template-rows: auto auto;
+  row-gap: 8px;
+
+  @include l {
+    margin-top: 40px;
+  }
+}
+
+.profileTour {
+  color: #a6a6a6;
+
+  @include l {
+    align-self: end;
+  }
+
+  @include text-small;
+}
+
+.profileName {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+
+  @include l {
+    padding-top: 16px;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.profileFoto {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}

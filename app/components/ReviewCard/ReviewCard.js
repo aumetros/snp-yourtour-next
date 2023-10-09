@@ -1,21 +1,21 @@
-import "./ReviewCard.css";
 import Image from "next/image";
+import styles from "./ReviewCard.module.scss"
 
 export default function ReviewCard({ review }) {
   return (
-    <div className="review-card">
-      <div className="review-card__text-container">
+    <div className={styles.root}>
+      <div>
         {review.text.map((p, i) => {
-          return <p key={i} className="review-card__text text-bold">{p}</p>;
+          return <p key={i} className={styles.text}>{p}</p>;
         })}
       </div>
-      <div className="review-card__profile">
-        <h3 className="review-card__profile-name">{review.name}</h3>
-        <span className="review-card__profile-tour text-small">
+      <div className={styles.profile}>
+        <h3 className={styles.profileName}>{review.name}</h3>
+        <span className={styles.profileTour}>
           {review.tour}
         </span>
         <Image
-          className="review-card__profile-foto"
+          className={styles.profileFoto}
           src={review.foto}
           alt="profile foto"
         />

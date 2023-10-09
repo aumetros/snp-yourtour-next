@@ -32,14 +32,14 @@ export default function Header() {
       <div
         className={`${styles.navbar} ${isScrollMenuShow && styles.scrolled}`}
       >
-        <div className={styles.navbar-container}>
+        <div className={styles.navbarContainer}>
           <div
             className={`${styles.logo} ${isScrollMenuShow && styles.scrolled}`}
           ></div>
           <NavigationMenu isScroll={isScrollMenuShow} />
           <a
             href="tel:+79999999999"
-            className={`${styles.phone-number} ${isScrollMenuShow && styles.scrolled}`}
+            className={`${styles.phoneNumber} ${isScrollMenuShow && styles.scrolled}`}
           >
             +7 999 999 99 99
           </a>
@@ -50,7 +50,7 @@ export default function Header() {
         Идейные соображения высшего порядка, а также рамки и место обучения
         кадров
       </p>
-      <button className={styles.find-button} type="button">
+      <button className={styles.findButton} type="button">
         Найти тур
       </button>
     </header>
