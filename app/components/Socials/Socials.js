@@ -1,13 +1,13 @@
-import "./Socials.css";
+import styles from "./Socials.module.scss"
 
 export default function Socials() {
   return (
-    <ul className="socials">
+    <ul className={styles.root}>
       <li>
-        <div className="socials__icon socials__icon_el_inst"></div>
+        <div className={`${styles.icon} ${styles.inst}`}></div>
         <a
           href="https://instagram.com/"
-          className="socials__link text"
+          className={styles.link}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,10 +15,10 @@ export default function Socials() {
         </a>
       </li>
       <li>
-        <div className="socials__icon socials__icon_el_fb"></div>
+        <div className={`${styles.icon} ${styles.fb}`}></div>
         <a
           href="https://facebook.com/"
-          className="socials__link text"
+          className={styles.link}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -26,10 +26,10 @@ export default function Socials() {
         </a>
       </li>
       <li>
-        <div className="socials__icon socials__icon_el_vk"></div>
+        <div className={`${styles.icon} ${styles.vk}`}></div>
         <a
           href="https://vk.ru/"
-          className="socials__link text"
+          className={styles.link}
           target="_blank"
           rel="noopener noreferrer"
         >
