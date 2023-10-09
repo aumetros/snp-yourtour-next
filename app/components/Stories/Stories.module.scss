@@ -1,0 +1,50 @@
+@import "../../common/mixins.scss";
+
+.root {
+  max-width: 1170px;
+  padding: 135px 53px;
+  margin: 0 auto;
+
+  @include l {
+    padding: 75px 21px;
+  }
+}
+
+.title {
+  max-width: 615px;
+  margin: 0 auto 30px;
+
+  @include l {
+    max-width: 319px;
+    margin-bottom: 20px;
+  }
+
+  @include text-section-title;
+}
+
+.subtitle {
+  max-width: 418px;
+  margin: 0 auto 100px;
+  text-align: center;
+  color: #a6a6a6;
+
+  @include l {
+    max-width: 319px;
+    margin-bottom: 50px;
+  }
+
+  @include text;
+}
+
+.cards {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+
+  @include l {
+    gap: 20px;
+  }
+}
