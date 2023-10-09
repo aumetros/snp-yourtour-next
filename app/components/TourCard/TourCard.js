@@ -1,25 +1,25 @@
-import "./TourCard.css";
 import Image from "next/image";
+import styles from "./TourCard.module.scss";
 
 export default function TourCard({ card }) {
   return (
-    <li className="tours-card">
+    <li className={styles.root}>
     <Image
-      className="tours-card__foto"
+      className={styles.foto}
       src={card}
       alt="tour foto"
     />
-    <div className="tours-card__text-container">
-      <h3 className="tours-card__title text-card-title">
+    <div className={styles.textContainer}>
+      <h3 className={styles.title}>
         Путешествие в&nbsp;горы
       </h3>
-      <p className="tours-card__subtitle">от 80 000 руб</p>
+      <p className={styles.subtitle}>от 80 000 руб</p>
     </div>
-    <button className="tours-card__forward-button text-bold">
+    <button className={styles.forwardButton}>
       <span>Подробнее</span>
-      <span className="tours-card__button-arrow"></span>
+      <span className={styles.buttonArrow}></span>
     </button>
-    <div className="tours-card__overlay"></div>
+    <div className={styles.overlay}></div>
   </li>
   )
 }

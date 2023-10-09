@@ -37,7 +37,7 @@
 }
 
 @mixin onlyDesktop {
-  @media (min-width: $breakpoint_l) {
+  @media (min-width: $breakpoint_xl) {
     @content;
   }
 }
