@@ -1,18 +1,18 @@
-import "./Review.css";
 import { reviews } from "../../utils/useData";
 import ReviewCard from "../ReviewCard/ReviewCard";
+import styles from "./Review.module.scss"
 
 export default function Review() {
   return (
-    <section id="review" className="review">
-      <h2 className="review__title text-section-title">
+    <section id="review" className={styles.root}>
+      <h2 className={styles.title}>
         Отзывы&nbsp;наших путешественников
       </h2>
-      <p className="review__subtitle text">
+      <p className={styles.subtitle}>
         Идейные соображения высшего порядка, а также рамки и место обучения
         кадров
       </p>
-      <div className="review__cards">
+      <div className={styles.cards}>
         {reviews.map((review, index) => {
           return <ReviewCard key={index} review={review} />;
         })}
