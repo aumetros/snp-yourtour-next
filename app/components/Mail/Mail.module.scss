@@ -1,0 +1,91 @@
+@import "../../common/mixins.scss";
+
+.root {
+  max-width: 771px;
+  margin: 0 auto;
+  padding-bottom: 135px;
+  display: flex;
+  gap: 30px;
+
+  @include l {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+
+  @include m {
+    max-width: 291px;
+    margin: 0 auto;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  @include m {
+    max-width: 291px;
+  }
+}
+
+.subtitle {
+  display: block;
+  color: #a6a6a6;
+
+  @include m {
+    max-width: 291px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include text;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1b1f2b;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+
+  &:active {
+    color: #286562;
+  }
+
+  @include m {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+.foto {
+  width: 370px;
+  height: 370px;
+  border-radius: 50px;
+  display: block;
+
+  @include m {
+    width: 130px;
+    height: 133px;
+    border-radius: 20px;
+  }
+}
