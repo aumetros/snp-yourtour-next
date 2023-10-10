@@ -46,6 +46,8 @@
   }
 
   @include text;
+
+  @include hover;
 }
 
 .select {
@@ -134,6 +136,8 @@
   }
 
   @include text;
+
+  @include hover;
 }
 
 .radios {

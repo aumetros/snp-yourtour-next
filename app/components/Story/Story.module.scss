@@ -157,6 +157,8 @@
     padding-top: 9px;
     gap: 17px;
   }
+
+  @include hover;
 }
 
 .footer {

@@ -79,6 +79,8 @@
   }
 
   @include text-bold;
+
+  @include hover;
 }
 
 .foto {
