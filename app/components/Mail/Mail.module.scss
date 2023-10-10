@@ -12,15 +12,6 @@
     align-items: center;
     padding-bottom: 75px;
   }
-
-  @include m {
-    max-width: 291px;
-    margin: 0 auto;
-    font-size: 23px;
-    line-height: 28px;
-    letter-spacing: 0.04em;
-    text-align: center;
-  }
 }
 
 .title {
@@ -28,6 +19,15 @@
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
+
+  @include m {
+    max-width: 291px;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .text {
