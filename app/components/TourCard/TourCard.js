@@ -9,7 +9,7 @@ export default function TourCard({ card }) {
       src={card}
       alt="tour foto"
     />
-    <div className={styles.textContainer}>
+    <div className={styles['text-сontainer']}>
       <h3 className={styles.title}>
         Путешествие в&nbsp;горы
       </h3>

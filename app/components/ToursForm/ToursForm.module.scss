@@ -1,0 +1,439 @@
+@import "../../common/mixins.scss";
+
+.root {
+  max-width: 1170px;
+  padding: 70px;
+  border-radius: 50px;
+  background-color: #ffffff;
+
+  @include xxl {
+    padding: 60px;
+  }
+
+  @include m {
+    padding: 20px 20px 40px;
+    border-radius: 30px;
+  }
+}
+
+.label {
+  @include text;
+}
+
+.submit-button {
+  min-width: 235px;
+  min-height: 58px;
+  padding: 15px 30px;
+  margin-right: 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #286562;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #3b7e7b;
+  }
+
+  &:active {
+    background-color: #627f7e;
+  }
+
+  @include l {
+    min-width: 134px;
+    min-height: 47px;
+    margin-right: 10px;
+    padding: 12px 29.5px;
+  }
+
+  @include text;
+}
+
+.select {
+  height: 68px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #f4f0e9;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f9f7f4;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f4f0e9;
+  }
+
+  &:focus {
+    outline: 1px solid #a6a6a6;
+  }
+
+  &:invalid {
+    color: #a6a6a6;
+  }
+
+  option {
+    color: #1b1f2b;
+  }
+
+  @include l {
+    height: 46px;
+    padding: 10px;
+  }
+
+  @include text;
+}
+
+.select-container {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 23px;
+    right: 26px;
+    width: 12px;
+    height: 12px;
+    border: solid #1b1f2b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    @include l {
+      top: 13px;
+      right: 16px;
+    }
+  }
+}
+
+.reset-button {
+  min-width: 235px;
+  min-height: 58px;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #e0f0e5;
+  color: #286562;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f1f3f2;
+  }
+
+  &:active {
+    background-color: #d9dfdb;
+  }
+
+  @include l {
+    min-width: 134px;
+    min-height: 47px;
+    padding: 12px 29.5px;
+  }
+
+  @include text;
+}
+
+.radios {
+  display: flex;
+  margin: 8px 0 29px;
+
+  @include l {
+    margin-bottom: 30px;
+  }
+}
+
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  &:checked + .pseudo_type_radio::after {
+    display: block;
+  }
+}
+
+.pseudo {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-size: 26px 26px;
+  background-position: left;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+
+  @include l {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+  }
+}
+
+.pseudo_type_radio {
+  width: 26px;
+  height: 26px;
+  margin-right: 11px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #1b1f2b;
+  background-size: 12px 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #1b1f2b;
+
+    @include l {
+      width: 9.23px;
+      height: 9.23px;
+      top: 3.5px;
+      left: 3.5px;
+    }
+  }
+
+  @include l {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
+    background-size: 9.23px 9.23px;
+  }
+}
+
+.label_el_radio {
+  display: flex;
+  padding-right: 31px;
+
+  @include l {
+    padding-right: 30px;
+  }
+}
+
+.input {
+  height: 68px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #f4f0e9;
+  border-radius: 10px;
+  background-color: #f9f7f4;
+  cursor: pointer;
+
+  &::placeholder {
+    color: #a6a6a6;
+  }
+
+  &:hover {
+    background-color: #f4f0e9;
+  }
+
+  &:focus {
+    outline: 1px solid #a6a6a6;
+  }
+
+  @include l {
+    height: 43px;
+    padding: 10px;
+  }
+
+  @include text;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.fieldset_type_inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(287px, 1fr));
+  column-gap: 30px;
+  row-gap: 33px;
+
+  @include xxl {
+    column-gap: 20px;
+  }
+
+  @include l {
+    grid-template-columns: minmax(278px, 1fr);
+    row-gap: 30px;
+  }
+}
+
+.fieldset_type_checkboxes {
+  padding-top: 34px;
+
+  @include l {
+    padding-top: 29px;
+  }
+}
+
+.fieldset_type_agree {
+  display: flex;
+  align-items: center;
+  margin: 2px 0 34px;
+
+  @include l {
+    margin-bottom: 29px;
+    align-items: flex-start;
+  }
+}
+
+.date {
+  color: #a6a6a6;
+  text-transform: uppercase;
+  letter-spacing: -0.7px;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container_size_wide {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @include l {
+    grid-column-end: 2;
+  }
+}
+
+.comment {
+  padding: 20px;
+  height: 152px;
+  border: 1px solid #f4f0e9;
+  background-color: #f9f7f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  resize: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f4f0e9;
+  }
+
+  &:focus {
+    outline: 1px solid #a6a6a6;
+  }
+
+  @include l {
+    height: 132px;
+    padding: 10px;
+  }
+}
+
+.pseudo_type_checkbox {
+  width: 26px;
+  height: 26px;
+  margin-right: 19px;
+  border: 2px solid #1b1f2b;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-size: 13px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid #1b1f2b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    @include l {
+      top: 2px;
+      left: 6px;
+      width: 3px;
+      height: 8px;
+    }
+  }
+
+  @include xxl {
+    margin-right: 11px;
+  }
+
+  @include l {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-size: 10px 8px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  &:checked + .pseudo_type_checkbox::after {
+    display: block;
+  }
+}
+
+.agree-text {
+  vertical-align: middle;
+  color: #a6a6a6;
+
+  @include l {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+
+  @include text-small;
+}
+
+.agree-link {
+  margin-left: 4px;
+  vertical-align: middle;
+  color: #1b1f2b;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #286562;
+  }
+
+  @include l {
+    letter-spacing: 0;
+  }
+
+  @include text-small;
+}
