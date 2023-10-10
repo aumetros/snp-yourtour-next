@@ -1,0 +1,42 @@
+@import "../../common/mixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 106px;
+  padding: 0;
+  gap: 31px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+
+  @include m {
+    margin-bottom: 50px;
+    gap: 10px;   
+  }
+}
+
+.type {
+  padding: 0;
+  border: 0;
+  color: #1b1f2b;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  &.active {
+    color: #efa501;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+    @include m {
+      text-underline-offset: 4px;
+    }
+  }
+
+  @include text-bold;
+}

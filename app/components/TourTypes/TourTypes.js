@@ -1,24 +1,24 @@
-import "./TourTypes.css";
+import styles from "./TourTypes.module.scss";
 
 export default function TourTypes() {
   return (
-    <ul className="tours-types">
+    <ul className={styles.root}>
       <li>
-        <button className="tours-types__type text-bold tours-types__type_active">
+        <button className={`${styles.type} ${styles.active}`}>
           Популярные
         </button>
       </li>
       <li>
-        <button className="tours-types__type text-bold">Авторские</button>
+        <button className={styles.type}>Авторские</button>
       </li>
       <li>
-        <button className="tours-types__type text-bold">Походы</button>
+        <button className={styles.type}>Походы</button>
       </li>
       <li>
-        <button className="tours-types__type text-bold">Сплавы</button>
+        <button className={styles.type}>Сплавы</button>
       </li>
       <li>
-        <button className="tours-types__type text-bold">Велопрогулки</button>
+        <button className={styles.type}>Велопрогулки</button>
       </li>
     </ul>
   );
