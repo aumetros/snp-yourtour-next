@@ -1,9 +1,7 @@
 @import "../../common/mixins.scss";
 
 .root {
-  max-width: 1170px;
   padding: 135px 53px;
-  margin: 0 auto;
 
   @include l {
     padding: 75px 21px;
