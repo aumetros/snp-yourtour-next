@@ -1,9 +1,9 @@
 @import "../../common/mixins.scss";
 
 .root {
-  padding-bottom: 119px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 119px;  
   align-items: center;
   background-image: url(../../images/header-img.png);
   background-size: cover;
@@ -28,7 +28,7 @@
   }
 }
 
-.findButton {
+.find-button {
   min-width: 118px;
   min-height: 34px;
   padding: 5px 20px;
@@ -81,10 +81,10 @@
 }
 
 .navbarContainer {
-  max-width: 1168px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
+  max-width: 1168px;
+  margin: 0 auto;  
   justify-content: space-between;
   align-items: center;
 }
@@ -109,7 +109,7 @@
   }
 }
 
-.phoneNumber {
+.phone-number {
   position: relative;
   color: #ffffff;
   text-decoration: none;

@@ -35,9 +35,9 @@
 }
 
 .cards {
+  display: grid;
   width: 100%;
   margin: 0 auto;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(318px, 1fr));
   gap: 30px;
 

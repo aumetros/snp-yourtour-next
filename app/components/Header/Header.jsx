@@ -1,7 +1,7 @@
 "use client";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import React from "react";
-import styles from "./Header.module.scss"
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const [isScrollMenuShow, setIsScrollMenuShow] = React.useState(false);
@@ -39,7 +39,9 @@ export default function Header() {
           <NavigationMenu isScroll={isScrollMenuShow} />
           <a
             href="tel:+79999999999"
-            className={`${styles.phoneNumber} ${isScrollMenuShow && styles.scrolled}`}
+            className={`${styles["phone-number"]} ${
+              isScrollMenuShow && styles.scrolled
+            }`}
           >
             +7 999 999 99 99
           </a>
@@ -50,7 +52,7 @@ export default function Header() {
         Идейные соображения высшего порядка, а также рамки и место обучения
         кадров
       </p>
-      <button className={styles.findButton} type="button">
+      <button className={styles["find-button"]} type="button">
         Найти тур
       </button>
     </header>

@@ -1,4 +1,4 @@
-import styles from "./Socials.module.scss"
+import styles from "./Socials.module.scss";
 
 export default function Socials() {
   return (

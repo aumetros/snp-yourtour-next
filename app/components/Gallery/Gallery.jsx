@@ -5,9 +5,7 @@ import styles from "./Gallery.module.scss";
 export default function Gallery() {
   return (
     <section className={styles.root}>
-      <h2 className={styles.title}>
-        Фотографии путешествий
-      </h2>
+      <h2 className={styles.title}>Фотографии путешествий</h2>
       <p className={styles.subtitle}>
         Идейные соображения высшего порядка, а также рамки и место обучения
         кадров

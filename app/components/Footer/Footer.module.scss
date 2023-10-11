@@ -24,8 +24,8 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
+  justify-content: space-between;
 
   @include xxl {
     max-width: 918px;

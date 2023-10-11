@@ -1,9 +1,9 @@
 @import "../../common/mixins.scss";
 
 .root {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   gap: 25px;
   list-style-type: none;
   align-items: center;
@@ -29,10 +29,10 @@
 }
 
 .icon {
+  display: inline-block;
   width: 26px;
   height: 26px;
   margin-right: 10px;
-  display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: right center;

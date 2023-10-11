@@ -1,11 +1,11 @@
 @import "../../common/mixins.scss";
 
 .root {
+  display: flex;
+  flex-direction: column;
   min-height: 673px;
   padding: 40px;
   border-radius: 50px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   background-color: #f4f0e9;
@@ -43,7 +43,7 @@
   }
 }
 
-.profileTour {
+.profile-tour {
   color: #a6a6a6;
 
   @include l {
@@ -53,7 +53,7 @@
   @include text-small;
 }
 
-.profileName {
+.profile-name {
   margin: 0;
   font-size: 35px;
   font-weight: 500;
@@ -68,7 +68,7 @@
   }
 }
 
-.profileFoto {
+.profile-foto {
   width: 75px;
   height: 75px;
   border-radius: 100px;

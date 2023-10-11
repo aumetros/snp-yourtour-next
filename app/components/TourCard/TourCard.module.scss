@@ -1,9 +1,9 @@
 @import "../../common/mixins.scss";
 
 .root {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 370px;
   min-height: 531px;
   padding: 50px 50px 43px;
@@ -22,8 +22,8 @@
   @include xl {
     width: 318px;
     min-height: 318px;
-    border-radius: 20px;
     padding: 25px;
+    border-radius: 20px;
   }
 
   &:hover {
@@ -32,7 +32,7 @@
         transform: scale(1.2);
       }
 
-      .forwardButton {
+      .forward-button {
         background-color: #286562;
       }
     }
@@ -40,14 +40,14 @@
 
   &:active {
     @include onlyDesktop {
-      .forwardButton {
+      .forward-button {
         background-color: #efa501;
       }
     }
   }
 }
 
-.buttonArrow {
+.button-arrow {
   min-width: 22px;
   min-height: 15px;
   background-image: url(../../images/arrow-img.svg);
@@ -56,10 +56,10 @@
   background-size: contain;
 }
 
-.forwardButton {
+.forward-button {
+  z-index: 2;
   display: flex;
   flex-direction: row;
-  z-index: 2;
   width: 199px;
   min-height: 42px;
   transform: translateX(-20px);
@@ -84,8 +84,8 @@
 }
 
 .foto {
-  display: block;
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -95,12 +95,12 @@
 }
 
 .overlay {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background: linear-gradient(
     360deg,
     rgba(0, 0, 0, 0.4) 0%,

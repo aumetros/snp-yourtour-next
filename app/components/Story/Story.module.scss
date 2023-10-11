@@ -1,9 +1,9 @@
 @import "../../common/mixins.scss";
 
 .root {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 100%;
   min-height: 567px;
   padding: 60px;
@@ -15,14 +15,14 @@
   cursor: pointer;
 
   @include l {
-    border-radius: 20px;
     min-height: 455px;
     padding: 30px 25px 30px 30px;
+    border-radius: 20px;
   }
 
   &:hover {
     @include onlyDesktop {
-      .forwardButton {
+      .forward-button {
         background-color: #286562;
       }
 
@@ -34,7 +34,7 @@
 
   &:active {
     @include onlyDesktop {
-      .forwardButton {
+      .forward-button {
         background-color: #efa501;
       }
     }
@@ -124,8 +124,8 @@
 }
 
 .image {
-  display: block;
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -134,14 +134,14 @@
   transition: all 300ms ease;
 }
 
-.forwardButton {
+.forward-button {
   display: flex;
   flex-direction: row;
   width: 199px;
   height: 42px;
   padding: 7px 20px;
-  border: 0;
   transform: translate(-20px, 7px);
+  border: 0;
   border-radius: 50px;
   align-items: center;
   gap: 16px;
@@ -161,8 +161,8 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
   z-index: 2;
+  justify-content: space-between;
 }
 
 .description {
@@ -172,7 +172,7 @@
   @include text;
 }
 
-.arrowButton {
+.arrow-button {
   min-width: 22px;
   min-height: 15px;
   background-image: url(../../images/arrow-img.svg);

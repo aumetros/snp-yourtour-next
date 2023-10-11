@@ -1,16 +1,16 @@
 @import "../../common/mixins.scss";
 
 .root {
+  display: flex;
   max-width: 771px;
   margin: 0 auto;
   padding-bottom: 135px;
-  display: flex;
   gap: 30px;
 
   @include l {
+    padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 75px;
   }
 }
 
@@ -22,11 +22,11 @@
 
   @include m {
     max-width: 291px;
+    margin: 0 auto;
+    text-align: center;
     font-size: 23px;
     line-height: 28px;
     letter-spacing: 0.04em;
-    margin: 0 auto;
-    text-align: center;
   }
 }
 
@@ -75,10 +75,10 @@
 }
 
 .foto {
+  display: block;
   width: 370px;
   height: 370px;
   border-radius: 50px;
-  display: block;
 
   @include m {
     width: 130px;
