@@ -55,17 +55,12 @@
 }
 
 .link {
+  position: relative;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   color: #1b1f2b;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 2px;
-  }
 
   &:active {
     color: #286562;
@@ -75,6 +70,8 @@
     font-size: 16px;
     line-height: 23px;
   }
+
+  @include hoverUnderline(#1b1f2b);
 }
 
 .foto {

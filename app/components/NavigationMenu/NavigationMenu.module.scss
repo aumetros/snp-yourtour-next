@@ -18,20 +18,18 @@
 }
 
 .item {
+  position: relative;
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-decoration: none;
-  white-space: nowrap;
-
-  &:hover {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 1px;
-  }
+  white-space: nowrap; 
 
   &.scrolled {
     color: #1b1f2b;
+    @include hoverUnderline(#1b1f2b);
   }
+
+  @include hoverUnderline;
 }

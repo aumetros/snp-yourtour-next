@@ -85,6 +85,8 @@
   }
 
   @include text;
+
+  @include hover;
 }
 
 .select-container {
@@ -253,6 +255,8 @@
   }
 
   @include text;
+
+  @include hover;
 }
 
 .fieldset {
@@ -346,6 +350,8 @@
     height: 132px;
     padding: 10px;
   }
+
+  @include hover;
 }
 
 .pseudo_type_checkbox {
@@ -421,14 +427,11 @@
 }
 
 .agree-link {
+  position: relative;
   margin-left: 4px;
   vertical-align: middle;
   color: #1b1f2b;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 
   &:active {
     color: #286562;
@@ -439,4 +442,6 @@
   }
 
   @include text-small;
+
+  @include hoverUnderline(#1b1f2b);
 }
