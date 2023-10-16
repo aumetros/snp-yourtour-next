@@ -6,12 +6,8 @@
   padding: 135px 0 82px;
   align-items: center;
 
-  @include xxl {
-    padding: 135px 53px 82px;
-  }
-
   @include m {
-    padding: 75px 21px 22px;
+    padding: 75px 0 22px;
   }
 }
 

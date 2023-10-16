@@ -1,10 +1,10 @@
 @import "../../styles/mixins.scss";
 
 .root {
-  padding: 53px 53px 52px;
+  padding: 53px 0 52px;
 
   @include m {
-    padding: 53px 21px 52px;
+    padding: 53px 0 52px;
   }
 }
 
