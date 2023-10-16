@@ -1,5 +1,5 @@
-import Section from "../Section/Section";
-import mail from "../../images/mail-img.png";
+import Section from "@/components/Section/Section";
+import mail from "@/images/mail-img.png";
 import Image from "next/image";
 import styles from "./Mail.module.scss";
 

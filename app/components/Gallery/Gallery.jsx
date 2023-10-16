@@ -1,6 +1,6 @@
-import Section from "../Section/Section";
+import Section from "@/components/Section/Section";
 import Image from "next/image";
-import { arrGallery } from "../../utils/useData";
+import { arrGallery } from "@/utils/useData";
 import styles from "./Gallery.module.scss";
 
 export default function Gallery() {

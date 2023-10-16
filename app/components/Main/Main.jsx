@@ -1,10 +1,10 @@
-import FindTour from "../FindTour/FindTour";
-import ChooseTour from "../ChooseTour/ChooseTour";
-import CollectTour from "../CollectTour/CollectTour";
-import Review from "../Review/Review";
-import Gallery from "../Gallery/Gallery";
-import Stories from "../Stories/Stories";
-import Mail from "../Mail/Mail";
+import FindTour from "@/components/FindTour/FindTour";
+import ChooseTour from "@/components/ChooseTour/ChooseTour";
+import CollectTour from "@/components/CollectTour/CollectTour";
+import Review from "@/components/Review/Review";
+import Gallery from "@/components/Gallery/Gallery";
+import Stories from "@/components/Stories/Stories";
+import Mail from "@/components/Mail/Mail";
 
 export default function Main() {
   return (

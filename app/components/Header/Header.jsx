@@ -1,5 +1,5 @@
 "use client";
-import NavigationMenu from "../NavigationMenu/NavigationMenu";
+import NavigationMenu from "@/components/NavigationMenu/NavigationMenu";
 import React from "react";
 import styles from "./Header.module.scss";
 

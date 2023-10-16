@@ -1,6 +1,6 @@
-import Section from "../Section/Section";
-import Container from "../Container/Container";
-import ToursForm from "../ToursForm/ToursForm";
+import Section from "@/components/Section/Section";
+import Container from "@/components/Container/Container";
+import ToursForm from "@/components/ToursForm/ToursForm";
 import styles from "./CollectTour.module.scss";
 
 export default function CollectTour() {

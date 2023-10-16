@@ -1,5 +1,5 @@
-import Socials from "../Socials/Socials";
-import Container from "../Container/Container";
+import Socials from "@/components/Socials/Socials";
+import Container from "@/components/Container/Container";
 import styles from "./Footer.module.scss";
 
 export default function Footer() {

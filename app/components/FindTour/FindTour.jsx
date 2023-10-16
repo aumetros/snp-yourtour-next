@@ -1,4 +1,4 @@
-import Section from "../Section/Section";
+import Section from "@/components/Section/Section";
 import styles from "./FindTour.module.scss";
 
 export default function FindTour() {
