@@ -1,3 +1,4 @@
+import FindTour from "../FindTour/FindTour";
 import ChooseTour from "../ChooseTour/ChooseTour";
 import CollectTour from "../CollectTour/CollectTour";
 import Review from "../Review/Review";
@@ -8,6 +9,7 @@ import Mail from "../Mail/Mail";
 export default function Main() {
   return (
     <main>
+      <FindTour />
       <ChooseTour />
       <CollectTour />
       <Review />

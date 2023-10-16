@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className={`${styles.root} ${isScrollMenuShow && styles.scrolled}`}>
       <div
-        className={`${styles.navbar} ${isScrollMenuShow && styles.scrolled}`}
+        className={styles.navbar}
       >
         <div className={styles.navbarContainer}>
           <div
@@ -47,14 +47,6 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <h1 className={styles.title}>Идеальные путешествия существуют</h1>
-      <p className={styles.subtitle}>
-        Идейные соображения высшего порядка, а также рамки и место обучения
-        кадров
-      </p>
-      <button className={styles["find-button"]} type="button">
-        Найти тур
-      </button>
     </header>
   );
 }

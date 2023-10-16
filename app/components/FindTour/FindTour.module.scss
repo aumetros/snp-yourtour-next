@@ -1,0 +1,94 @@
+@import "../../styles/mixins.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 88px 0 119px;
+  align-items: center;
+  background-image: url(../../images/header-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+
+  @include xxl {
+    background-image: url(../../images/header-02-img.png);
+  }
+
+  @include m {
+    padding-bottom: 52px;
+  }
+}
+
+.find-button {
+  min-width: 118px;
+  min-height: 34px;
+  padding: 5px 20px;
+  border: 0;
+  border-radius: 10px;
+  color: #1b1f2b;
+  background-color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #efa501;
+  }
+
+  &:active {
+    color: #1b1f2b;
+    background-color: #f8e6be;
+  }
+
+  @include m {
+    min-width: 114px;
+    min-height: 33px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  @include hover;
+}
+
+.title {
+  max-width: 768px;
+  margin: 118px 0 0;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 105px;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  @include l {
+    max-width: 360px;
+    font-size: 56px;
+    line-height: 58px;
+  }
+
+  @include m {
+    margin-top: 51px;
+    font-size: 34px;
+    line-height: 38px;
+  }
+}
+
+.subtitle {
+  margin: 51px 0 50px;
+  max-width: 562px;
+  text-align: center;
+
+  @include xxl {
+    max-width: 442px;
+  }
+
+  @include l {
+    max-width: 310px;
+    margin: 40px 0;
+  }
+
+  @include text;
+}
