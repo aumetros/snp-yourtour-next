@@ -1,11 +1,12 @@
-import { reviews } from "../../utils/useData";
-import ReviewCard from "../ReviewCard/ReviewCard";
+import Section from "../Section/Section";
 import Container from "../Container/Container";
+import ReviewCard from "../ReviewCard/ReviewCard";
+import { reviews } from "../../utils/useData";
 import styles from "./Review.module.scss";
 
 export default function Review() {
   return (
-    <section id="review" className={styles.root}>
+    <Section className={styles.root} id="review">
       <Container>
         <h2 className={styles.title}>Отзывы&nbsp;наших путешественников</h2>
         <p className={styles.subtitle}>
@@ -18,6 +19,6 @@ export default function Review() {
           })}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

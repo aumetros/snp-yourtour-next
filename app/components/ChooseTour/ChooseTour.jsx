@@ -1,12 +1,13 @@
+import Section from "../Section/Section";
+import Container from "../Container/Container";
 import TourTypes from "../TourTypes/TourTypes";
 import TourCard from "../TourCard/TourCard";
 import { arrCards } from "../../utils/useData";
-import Container from "../Container/Container";
 import styles from "./ChooseTour.module.scss";
 
 export default function ChooseTour() {
   return (
-    <section id="choose-tour" className={styles.root}>
+    <Section className={styles.root} id="choose-tour">
       <Container>
         <h2 className={styles.title}>Выбери свой тур</h2>
         <TourTypes />
@@ -16,6 +17,6 @@ export default function ChooseTour() {
           })}
         </ul>
       </Container>
-    </section>
+    </Section>
   );
 }

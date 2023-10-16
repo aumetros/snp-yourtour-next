@@ -1,10 +1,11 @@
-import { arrGallery } from "../../utils/useData";
+import Section from "../Section/Section";
 import Image from "next/image";
+import { arrGallery } from "../../utils/useData";
 import styles from "./Gallery.module.scss";
 
 export default function Gallery() {
   return (
-    <section className={styles.root}>
+    <Section className={styles.root}>
       <h2 className={styles.title}>Фотографии путешествий</h2>
       <p className={styles.subtitle}>
         Идейные соображения высшего порядка, а также рамки и место обучения
@@ -48,6 +49,6 @@ export default function Gallery() {
           })}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

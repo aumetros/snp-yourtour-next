@@ -1,11 +1,12 @@
+import Section from "../Section/Section";
+import Container from "../Container/Container";
 import Story from "../Story/Story";
 import { stories } from "../../utils/useData";
-import Container from "../Container/Container";
 import styles from "./Stories.module.scss";
 
 export default function Stories() {
   return (
-    <section id="stories" className={styles.root}>
+    <Section className={styles.root} id="stories">
       <Container>
         <h2 className={styles.title}>Истории путешествий</h2>
         <p className={styles.subtitle}>
@@ -18,6 +19,6 @@ export default function Stories() {
           })}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }

@@ -1,10 +1,11 @@
-import ToursForm from "../ToursForm/ToursForm";
+import Section from "../Section/Section";
 import Container from "../Container/Container";
+import ToursForm from "../ToursForm/ToursForm";
 import styles from "./CollectTour.module.scss";
 
 export default function CollectTour() {
   return (
-    <section id="collect-tour" className={styles.root}>
+    <Section className={styles.root} id="collect-tour">
       <Container>
         <h2 className={styles.title}>Собери свой тур</h2>
         <p className={styles.subtitle}>
@@ -13,6 +14,6 @@ export default function CollectTour() {
         </p>
         <ToursForm />
       </Container>
-    </section>
+    </Section>
   );
 }
