@@ -1,0 +1,9 @@
+@import "styles/mixins.scss";
+
+.root {
+  padding-bottom: 135px;
+
+  @include m {
+    padding-bottom: 75px;
+  }
+}

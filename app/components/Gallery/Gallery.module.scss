@@ -1,19 +1,4 @@
-@import "@/styles/mixins.scss";
-
-.root {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
-
-  @include xxl {
-    padding: 0 20px;
-  }
-
-  @include l {
-    padding: 0 21px;
-  }
-}
+@import "styles/mixins.scss";
 
 .title {
   max-width: 780px;

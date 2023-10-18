@@ -1,12 +1,4 @@
-@import "@/styles/mixins.scss";
-
-.root {
-  padding: 135px 0;
-
-  @include l {
-    padding: 75px 0;
-  }
-}
+@import "styles/mixins.scss";
 
 .title {
   max-width: 615px;

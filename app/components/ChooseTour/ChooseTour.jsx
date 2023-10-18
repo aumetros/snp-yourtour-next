@@ -1,8 +1,8 @@
-import Section from "@/components/Section/Section";
-import Container from "@/components/Container/Container";
-import TourTypes from "@/components/TourTypes/TourTypes";
-import TourCard from "@/components/TourCard/TourCard";
-import { arrCards } from "@/utils/useData";
+import Section from "components/Section/Section";
+import Container from "components/Container/Container";
+import TourTypes from "components/TourTypes/TourTypes";
+import TourCard from "components/TourCard/TourCard";
+import { arrCards } from "utils/useData";
 import styles from "./ChooseTour.module.scss";
 
 export default function ChooseTour() {

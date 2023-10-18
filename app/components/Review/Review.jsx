@@ -1,7 +1,7 @@
-import Section from "@/components/Section/Section";
-import Container from "@/components/Container/Container";
-import ReviewCard from "@/components/ReviewCard/ReviewCard";
-import { reviews } from "@/utils/useData";
+import Section from "components/Section/Section";
+import Container from "components/Container/Container";
+import ReviewCard from "components/ReviewCard/ReviewCard";
+import { reviews } from "utils/useData";
 import styles from "./Review.module.scss";
 
 export default function Review() {

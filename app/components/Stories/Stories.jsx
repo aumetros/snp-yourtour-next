@@ -1,7 +1,7 @@
-import Section from "@/components/Section/Section";
-import Container from "@/components/Container/Container";
-import Story from "@/components/Story/Story";
-import { stories } from "@/utils/useData";
+import Section from "components/Section/Section";
+import Container from "components/Container/Container";
+import Story from "components/Story/Story";
+import { stories } from "utils/useData";
 import styles from "./Stories.module.scss";
 
 export default function Stories() {

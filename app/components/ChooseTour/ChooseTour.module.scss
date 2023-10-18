@@ -1,15 +1,4 @@
-@import "@/styles/mixins.scss";
-
-.root {
-  display: flex;
-  flex-direction: column;
-  padding: 135px 0 82px;
-  align-items: center;
-
-  @include m {
-    padding: 75px 0 22px;
-  }
-}
+@import "styles/mixins.scss";
 
 .title {
   max-width: 473px;

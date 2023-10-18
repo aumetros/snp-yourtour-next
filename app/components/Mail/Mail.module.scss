@@ -1,18 +1,4 @@
-@import "@/styles/mixins.scss";
-
-.root {
-  display: flex;
-  max-width: 771px;
-  margin: 0 auto;
-  padding-bottom: 135px;
-  gap: 30px;
-
-  @include l {
-    padding-bottom: 75px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+@import "styles/mixins.scss";
 
 .title {
   margin: 0;

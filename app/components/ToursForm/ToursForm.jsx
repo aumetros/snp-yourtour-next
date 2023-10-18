@@ -1,4 +1,4 @@
-import Container from "@/components/Container/Container";
+import Container from "components/Container/Container";
 import styles from "./ToursForm.module.scss";
 
 export default function ToursForm() {
