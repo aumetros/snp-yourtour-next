@@ -37,19 +37,21 @@ export const reviews = [
 ];
 
 /**Данные для Gallery */
-import foto1 from "../images/gallery-01-img.png";
-import foto2 from "../images/gallery-02-img.png";
-import foto3 from "../images/gallery-03-img.png";
-import foto4 from "../images/gallery-04-img.png";
-import foto5 from "../images/gallery-05-img.png";
-import foto6 from "../images/gallery-06-img.png";
-import foto7 from "../images/gallery-07-img.png";
-import foto8 from "../images/gallery-08-img.png";
-import foto9 from "../images/gallery-09-img.png";
-import foto10 from "../images/gallery-10-img.png";
-import foto11 from "../images/gallery-11-img.png";
-import foto12 from "../images/gallery-12-img.png";
-import foto13 from "../images/gallery-13-img.png";
+export const arrGallery = [
+  "/images/gallery-01-img.png",
+  "/images/gallery-02-img.png",
+  "/images/gallery-03-img.png",
+  "/images/gallery-04-img.png",
+  "/images/gallery-05-img.png",
+  "/images/gallery-06-img.png",
+  "/images/gallery-07-img.png",
+  "/images/gallery-08-img.png",
+  "/images/gallery-09-img.png",
+  "/images/gallery-10-img.png",
+  "/images/gallery-11-img.png",
+  "/images/gallery-12-img.png",
+  "/images/gallery-13-img.png",
+];
 
 /**Данные для Stories */
 import story1 from "../images/stories-card-01-img.png";
@@ -94,18 +96,4 @@ export const stories = [
   },
 ];
 
-export const arrGallery = Array.of(
-  foto1,
-  foto2,
-  foto3,
-  foto4,
-  foto5,
-  foto6,
-  foto7,
-  foto8,
-  foto9,
-  foto10,
-  foto11,
-  foto12,
-  foto13
-);
+

@@ -22,6 +22,8 @@ export default function Gallery() {
                   src={img}
                   alt="gallery foto"
                   className={`${styles.item} ${styles.item_row_first}`}
+                  width={442.5}
+                  height={301}
                 />
               );
             })}
@@ -34,6 +36,8 @@ export default function Gallery() {
                   src={img}
                   alt="gallery foto"
                   className={`${styles.item} ${styles.item_row_second}`}
+                  width={348}
+                  height={301}
                 />
               );
             })}
@@ -46,6 +50,8 @@ export default function Gallery() {
                   src={img}
                   alt="gallery foto"
                   className={`${styles.item} ${styles.item_row_third}`}
+                  width={442.5}
+                  height={301}
                 />
               );
             })}
