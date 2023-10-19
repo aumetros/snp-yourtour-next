@@ -20,6 +20,8 @@ export default function ReviewCard({ review }) {
           className={styles["profile-foto"]}
           src={review.foto}
           alt="profile foto"
+          width={75}
+          height={75}
         />
       </div>
     </div>
