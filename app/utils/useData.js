@@ -91,5 +91,3 @@ export const stories = [
     foto: "/images/stories-card-03-img.png",
   },
 ];
-
-
