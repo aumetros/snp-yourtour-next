@@ -1,10 +1,12 @@
 /**Данные для ChooseTour */
-import card1 from "../images/card-tour-photo-1.jpg";
-import card2 from "../images/card-tour-photo-2.jpg";
-import card3 from "../images/card-tour-photo-3.jpg";
-import card4 from "../images/card-tour-photo-4.jpg";
-import card5 from "../images/card-tour-photo-5.jpg";
-import card6 from "../images/card-tour-photo-6.jpg";
+export const arrCards = [
+  "/images/card-tour-photo-1.jpg",
+  "/images/card-tour-photo-2.jpg",
+  "/images/card-tour-photo-3.jpg",
+  "/images/card-tour-photo-4.jpg",
+  "/images/card-tour-photo-5.jpg",
+  "/images/card-tour-photo-6.jpg",
+];
 
 /**Данные для Review */
 import reviewFoto1 from "../images/profile-01-img.png";
@@ -30,7 +32,7 @@ import story1 from "../images/stories-card-01-img.png";
 import story2 from "../images/stories-card-02-img.png";
 import story3 from "../images/stories-card-03-img.png";
 
-export const arrCards = Array.of(card1, card2, card3, card4, card5, card6);
+
 
 export const reviews = [
   {
