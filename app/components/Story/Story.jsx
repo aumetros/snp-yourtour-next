@@ -40,6 +40,8 @@ export default function Story({ story }) {
         className={styles.image}
         src={story.foto}
         alt="stories card foto"
+        width={1170}
+        height={567}
       />
     </div>
   );

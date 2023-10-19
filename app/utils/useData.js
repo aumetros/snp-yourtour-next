@@ -54,10 +54,6 @@ export const arrGallery = [
 ];
 
 /**Данные для Stories */
-import story1 from "../images/stories-card-01-img.png";
-import story2 from "../images/stories-card-02-img.png";
-import story3 from "../images/stories-card-03-img.png";
-
 export const stories = [
   {
     title: `Автостопом в Стамбул`,
@@ -69,7 +65,7 @@ export const stories = [
       ["facebook", "https://facebook.com/"],
       ["YouTube", "https://www.youtube.com/"],
     ],
-    foto: story1,
+    foto: "/images/stories-card-01-img.png",
   },
   {
     title: `Автостопом в Стамбул`,
@@ -80,7 +76,7 @@ export const stories = [
       ["instagram", "https://instagram.com/"],
       ["ВКонтакте", "https://www.vk.ru/"],
     ],
-    foto: story2,
+    foto: "/images/stories-card-02-img.png",
   },
   {
     title: `Автостопом в Стамбул`,
@@ -92,7 +88,7 @@ export const stories = [
       ["facebook", "https://facebook.com/"],
       ["ВКонтакте", "https://www.vk.ru/"],
     ],
-    foto: story3,
+    foto: "/images/stories-card-03-img.png",
   },
 ];
 
