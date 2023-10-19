@@ -2,7 +2,7 @@
 
 .root {
   display: flex;
-  background-image: url(../../images/header-img.png);
+  background-image: url(/images/header-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,7 +10,7 @@
   color: #ffffff;
 
   @include xxl {
-    background-image: url(../../images/header-02-img.png);
+    background-image: url(/images/header-02-img.png);
   }
 }
 

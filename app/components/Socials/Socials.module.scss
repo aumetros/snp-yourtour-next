@@ -44,7 +44,7 @@
 
   &.vk {
     margin: 2px 11px 0 0;
-    background-image: url(../../images/vk-icon-img.svg);
+    background-image: url(/images/vk-icon-img.svg);
     background-size: 20px 12px;
 
     @include m {
@@ -57,7 +57,7 @@
   &.inst {
     margin-right: 8px;
     background-position: 8px 8px;
-    background-image: url(../../images/ins-icon-img.svg);
+    background-image: url(/images/ins-icon-img.svg);
     background-size: 14px 14px;
 
     @include m {
@@ -71,7 +71,7 @@
   &.fb {
     margin-right: 10px;
     background-position-x: 15px;
-    background-image: url(../../images/fb-icon-img.svg);
+    background-image: url(/images/fb-icon-img.svg);
     background-size: 8px 17px;
 
     @include m {
