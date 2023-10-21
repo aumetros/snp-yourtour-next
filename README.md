@@ -22,6 +22,6 @@ HTML5, CSS3, Flexbox, Grid Layout, Next.js 13, JSX, Sass
 * Проект создан с помощью фреймворка Next.js 13.
 
 
-**Ссылка на проект - GitHub Pages**: (https://aumetros.github.io/snp-yourtour-next/)
+**Ссылка на проект - GitHub Pages**: (https://snp-yourtour-next.vercel.app)
 
 *сентябрь 2023г*
