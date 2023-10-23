@@ -5,7 +5,7 @@ import styles from "./Mail.module.scss";
 
 export default function Mail() {
   return (
-    <Section className={styles.root}>
+    <Section className="mail">
       <Container mail={true}>
         <Image
           className={styles.foto}

@@ -7,7 +7,7 @@ import styles from "./ChooseTour.module.scss";
 
 export default function ChooseTour() {
   return (
-    <Section className={styles.root} id="choose-tour">
+    <Section className="choose-tour" id="choose-tour">
       <Container>
         <h2 className={styles.title}>Выбери свой тур</h2>
         <TourTypes />

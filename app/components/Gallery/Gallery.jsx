@@ -6,7 +6,7 @@ import styles from "./Gallery.module.scss";
 
 export default function Gallery() {
   return (
-    <Section className={styles.root}>
+    <Section className="gallery">
       <Container wide={true}>
         <h2 className={styles.title}>Фотографии путешествий</h2>
         <p className={styles.subtitle}>

@@ -6,7 +6,7 @@ import styles from "./Stories.module.scss";
 
 export default function Stories() {
   return (
-    <Section className={styles.root} id="stories">
+    <Section className="stories" id="stories">
       <Container>
         <h2 className={styles.title}>Истории путешествий</h2>
         <p className={styles.subtitle}>

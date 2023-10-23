@@ -6,7 +6,7 @@ import styles from "./Review.module.scss";
 
 export default function Review() {
   return (
-    <Section className={styles.root} id="review">
+    <Section className="review" id="review">
       <Container>
         <h2 className={styles.title}>Отзывы&nbsp;наших путешественников</h2>
         <p className={styles.subtitle}>
